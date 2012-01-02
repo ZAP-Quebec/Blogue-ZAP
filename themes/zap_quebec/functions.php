@@ -19,7 +19,7 @@ function zapqc_get_prev_suiv(){
 function zapqc_get_compact_duz()
 {
 ?>
-<ul id="tease_duz"><li id="duz_img"><a href="<?php get_bloginfo('url'); ?>devenez-une-zap"></a></li><li id="duz_text"><a href="<?php get_bloginfo('home'); ?>devenez-une-zap"></a></li></ul>
+<ul id="tease_duz"><li id="duz_img"><a href="<?php get_bloginfo('home'); ?>devenez-une-zap"></a></li><li id="duz_text"><a href="<?php get_bloginfo('home'); ?>devenez-une-zap"></a></li></ul>
 <?php
 }
 
