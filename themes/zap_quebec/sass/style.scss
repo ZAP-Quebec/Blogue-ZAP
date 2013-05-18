@@ -1,2 +1,153 @@
 
 @import "_apps.scss";
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	color : #242424;
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 100;
+	}
+}
+
+header {
+	border-top: 5px solid #c3cf21;
+	nav.menu-lang-container {
+		@include grid-row();
+		li {
+			@include grid-column(2,false,false,0.1, false, false, false, right);
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	nav.menu-main-container {
+		@include grid-row();
+		li {
+			@include grid-column(2.8,false,false,0.1);
+			list-style: none;
+			height: 3em;
+			background: #689e2d;
+			
+			&:first-child {
+				background: #5bacd7;
+			}
+			a {
+				color: white;
+				display: block;
+				text-align: center;
+				padding-top: 0.5em;
+				font-size: 1.3em;
+			}
+		}
+	}
+	div.bandeau {
+		@include grid-row();
+		padding: 1em 0 2em;
+		.logo {
+			@include grid-column(3, true, true);
+			img {
+				display: block;
+			}
+		}
+	}
+}
+
+div#main {
+	@include grid-row();
+	h2.title {
+		font-family: 'source Sans Pro', sans-serif;
+		font-weight: 200;
+		&.devenez {
+			text-align: center;
+		}
+	}
+	section.nouvelles {
+		@include grid-row();
+		div.plus_recente {
+			@include grid-column(7.8, false, false, 0.2);
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		.postmetadata {
+			font-size: 0.8em;
+		}
+
+		.suite {
+			display: block;
+			margin-bottom: 0.8em;
+		}
+
+		aside {
+			@include grid-column(4, true, false);
+			h3 {
+				background: #689e2d;
+				color: white;
+				padding: 0 10px;
+				text-transform: uppercase;
+				font-size: 1.2em;
+				max-width: 50%;
+				margin: 0 0 0.7em -10px;
+			}
+			li {
+				list-style: none;
+				margin: 0 0 0.6em;
+				padding: 0;
+			}
+		}
+	}
+
+	.howTo_zap {
+		@include grid-row();
+		ul {
+			@include grid-column(10, false, true);
+			li {
+				@include grid-column(3.5, false, false, 0.5);
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		h3 {
+			font-size: 1.4em;
+			color: #0080B2;
+		}
+	}
+
+	footer {
+		background: #E6E9EB;
+
+		.sponsors {
+			@include grid-row();
+			margin: 2em 0;
+			h2 {
+				font-family: 'source Sans Pro', sans-serif;
+				font-weight: 200;
+				font-size: 1.4em;
+				text-align: center;
+			}
+			ul {
+				@include grid-column(6, false, true);
+				li {
+					@include grid-column(4, false, false);
+					list-style: none;
+				}
+			}
+		}
+
+		.provider {
+			@include grid-column(9,false,false,0, false, false, false, right);
+		}
+
+		.contactez_nous {
+			@include grid-row();
+			display: block;
+			padding: 3em 0;
+			text-align: center;
+		}
+
+	}
+
+}

@@ -1,4 +1,15 @@
 <?php
+
+function zapqc_setup(){
+
+	register_nav_menu( 'primary', __( 'Primary Menu', 'zap_quebec' ) );
+	register_nav_menu( 'lang', __( 'Language Menu', 'zap_quebec' ) );
+	register_nav_menu( 'devenir', __( 'Devenir une ZAP', 'zap_quebec' ) );
+	register_nav_menu( 'side', __( 'Page side', 'zap_quebec' ) );
+}
+
+add_action( 'after_setup_theme', 'zapqc_setup' );
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
@@ -26,8 +37,9 @@ function zapqc_get_compact_duz()
 function zapqc_get_description_line()
 {
 ?>
-<div class="postmetadata"><p class="post_info"><?php /*the_tags('Tags: ', ', ', '<br />'); ?> Publier dans <?php the_category(', ') */?> par <? the_author()?> le <?php the_time('j F Y') ?></p> 
-	 <p class="post_social"><a href="<?php comments_link('Commenter l’article', '1 commentaire', '% commentaires'); ?>">Commenter l'article</a> • Partager sur <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" class="share_fb">Facebook</a> <a href="http://del.icio.us/post?url=<?php the_permalink(); ?>" class="share_deli">Delicious</a></p></div>
+<div class="postmetadata">
+	<? the_author()?> le <?php the_time('j F Y') ?>
+</div>
 <?php
 }
 
@@ -80,5 +92,28 @@ function zapqc_get_cur_lang()
 
     return $val;
 }
+
+# From Twenty Twelve
+function twentytwelve_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() )
+		return $title;
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title = "$title $sep $site_description";
+
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 )
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'twentytwelve' ), max( $paged, $page ) );
+
+	return $title;
+}
+add_filter( 'wp_title', 'twentytwelve_wp_title', 10, 2 );
 
 ?>
