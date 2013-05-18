@@ -1,29 +1,33 @@
-<?php $cur_lang = zapqc_get_cur_lang(); ?>
 <!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
-	<head>
-	<meta charset="<?php bloginfo('charset'); ?>">
+<!--<![endif]-->
+		<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+		<meta name="viewport" content="width=device-width" />
+		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
+		<!--[if lt IE 9]>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+		<![endif]-->
 
-
-	<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
-
-
-	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-
-	<?php wp_head(); ?>
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-
+		<script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/custom.modernizr.js"></script>
 	</head>
 	<body >
 		<div id="conteneur">
-			<ul id="menu">
-				<li id="menu_oslz"> <a href="http://www.moijezap.org/ou"> </a></li>
-				<li id="menu_duz" <?php if(is_page("devenez-une-zap")){echo 'class="duz_active"';} ?>> <a href="<?php get_bloginfo('home'); ?>devenez-une-zap"> </a></li>
-				<li id="menu_nouv" <?php if(!is_front_page() && !is_page()){echo 'class="nouv_active"';} ?>><a href="<?php get_bloginfo('home'); ?>nouvelles"> </a></li>
-				<li id="menu_tsz" <?php if(is_page() && !is_front_page() && !is_page("devenez-une-zap") && !is_page("zap-nomade")){echo 'class="tsz_active"';} ?>> <a href="<?php bloginfo('url'); ?>/notreprojet"> </a></li>
-			</ul>
+
+
+			<nav id="menu">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
 			<div id="content">
 				
 				<ul id="langues">
