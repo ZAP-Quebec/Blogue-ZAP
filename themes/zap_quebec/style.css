@@ -6697,16 +6697,15 @@ div#main section.nouvelles aside h3 {
   padding: 0 10px;
   text-transform: uppercase;
   font-size: 1.2em;
-  max-width: 50%;
   margin: 0 0 0.7em -10px;
 }
-/* line 94, sass/style.scss */
+/* line 93, sass/style.scss */
 div#main section.nouvelles aside li {
   list-style: none;
   margin: 0 0 0.6em;
   padding: 0;
 }
-/* line 102, sass/style.scss */
+/* line 101, sass/style.scss */
 div#main .howTo_zap {
   width: 100%;
   margin-left: auto;
@@ -6717,7 +6716,7 @@ div#main .howTo_zap {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 104, sass/style.scss */
+/* line 103, sass/style.scss */
 div#main .howTo_zap ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6728,7 +6727,7 @@ div#main .howTo_zap ul {
   float: none !important;
   float: left;
 }
-/* line 106, sass/style.scss */
+/* line 105, sass/style.scss */
 div#main .howTo_zap ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6740,16 +6739,16 @@ div#main .howTo_zap ul li {
   margin: 0;
   padding: 0;
 }
-/* line 113, sass/style.scss */
+/* line 112, sass/style.scss */
 div#main .howTo_zap h3 {
   font-size: 1.4em;
   color: #0080B2;
 }
-/* line 119, sass/style.scss */
+/* line 118, sass/style.scss */
 div#main footer {
   background: #E6E9EB;
 }
-/* line 122, sass/style.scss */
+/* line 121, sass/style.scss */
 div#main footer .sponsors {
   width: 100%;
   margin-left: auto;
@@ -6761,14 +6760,14 @@ div#main footer .sponsors {
   *zoom: 1;
   margin: 2em 0;
 }
-/* line 125, sass/style.scss */
+/* line 124, sass/style.scss */
 div#main footer .sponsors h2 {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
   text-align: center;
 }
-/* line 131, sass/style.scss */
+/* line 130, sass/style.scss */
 div#main footer .sponsors ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6779,7 +6778,7 @@ div#main footer .sponsors ul {
   float: none !important;
   float: left;
 }
-/* line 133, sass/style.scss */
+/* line 132, sass/style.scss */
 div#main footer .sponsors ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6788,7 +6787,7 @@ div#main footer .sponsors ul li {
   float: left;
   list-style: none;
 }
-/* line 140, sass/style.scss */
+/* line 139, sass/style.scss */
 div#main footer .provider {
   position: relative;
   padding-left: 0.9375em;
@@ -6797,7 +6796,7 @@ div#main footer .provider {
   margin-left: 0%;
   float: right;
 }
-/* line 144, sass/style.scss */
+/* line 143, sass/style.scss */
 div#main footer .contactez_nous {
   width: 100%;
   margin-left: auto;
