@@ -29,10 +29,8 @@ Template Name: Accueil
 				</li>
 			</ul>
 			<h3 id="derniere_nouv"><a href="<?php bloginfo('rss2_url'); ?>" ></a></h3>
-                        <div id="app_mobile"><a href="http://itunes.apple.com/ca/app/zap-quebec-wifi-gratuit-partout/id381381665?mt=8"></a></div>
-			<div id="news_container" class="graybox accueil">
-				<div id="haut"></div>
-				<div id="bas"></div>
+
+			<section class="nouvelles">
 				
 			<?php 
 
@@ -42,30 +40,39 @@ Template Name: Accueil
 			while ($query->have_posts()) : $query->the_post();
 				if( $i<= 2){?>
 					<? if($i ==0){ ?>
-					<div id="text_content">
+					<div>
 					<? } ?>
 						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 						<p><?php the_excerpt(); ?></p>
 						<a href="<?php the_permalink(); ?>">Lire la suite</a>
 						<?php zapqc_get_description_line() ?>
 					<? if($i ==2){ ?>
-						<a href="<?php get_bloginfo('home'); ?>nouvelles"><img src="<?php bloginfo('template_url'); ?>/images/btn_voirlesautresnouvelles.png" alt="Plus de nouvelles" /></a>
+						<a href="<?php get_bloginfo('home'); ?>nouvelles">Toutes les nouvelles</a>
 					</div>
-					<div id="sidebar"><ul id="news_feed">
-						<li class="title"> ÉGALEMENT </li>
+					<aside class="sidebar">
+						<h3>Également</h3>
+						<ul>
 					<? } ?>
 						
 				<?php }else{ ?>
-						<li><a href="<?php echo the_permalink(); ?>"><h4 class="news"><?php the_title(); ?></h4></a></li>
+						<li><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></li>
 				<?php }
 				$i++;
 			endwhile;
 			?>
 				</ul>
-				<div id="coordonnes"><span class="title">NOS COORDONNÉES</span>
-<p>ZAP Québec<br />CP 20005, CSP Belvédère<br />Québec, QC G1S 4Z2</p><p>+1 (418) 263-8020<br /><a href="mailto:info@zapquebec.org">info@zapquebec.org</a></p></div></div>
-				
+			</aside>
+			</section>
+
+			<div id="coordonnes">
+				<span class="title">NOS COORDONNÉES</span>
+				<span> ZAP Québec<span>
+				<span>CP 20005, CSP Belvédère</span>
+				<span>Québec, QC G1S 4Z2</span>
+				<span>+1 (418) 263-8020</span>
+				<a href="mailto:info@zapquebec.org">info@zapquebec.org</a>
 			</div>
+				
 		
 		
 		
