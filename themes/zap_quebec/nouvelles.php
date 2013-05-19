@@ -33,9 +33,9 @@ Template Name: Nouvelles
 				<?php endif; ?>
 			
 			</div>
-			<aside>
-				<?php get_sidebar(); ?>
-			</aside>
+			
+			<?php get_sidebar(); ?>
+		
 		</section>
 
 

@@ -9,14 +9,13 @@
 					<?php while (have_posts()) : the_post(); ?>
 
 						<article class="post" id="post-<?php the_ID(); ?>">
-							<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                                                      
+							<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                            <?php zapqc_get_description_line();?>                          
 
 							<div class="entry">
 								<?php the_content('Read the rest of this entry &raquo;'); ?>
 							</div>
 
-							<?php zapqc_get_description_line();?>
 						</acticle>
 
 					<?php endwhile; ?>
@@ -28,9 +27,9 @@
 
 				<?php endif; ?>
 			</div>
-			<aside>
-				<?php get_sidebar(); ?>
-			</aside>
+			
+			<?php get_sidebar(); ?>
+		
 		</section>
 
 

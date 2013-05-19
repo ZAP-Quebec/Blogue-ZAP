@@ -53,18 +53,24 @@ Template Name: Accueil
 			<div class="howTo_zap">
 				<ul>
 					<li class="etape_rp">
-						<div class="icone"></div><h3 class="sub-title">Rencontre préliminaire</h3>
-						<span>Un représentant ZAP Québec se rend sur place afin de conclure l’entente de principe et répondre à vos questions par rapport à nos services.</span>
+						<span class="icone"></span><h3 class="sub-title">Rencontre préliminaire</h3>
+						<div>
+							Un représentant ZAP Québec se rend sur place afin de conclure l’entente de principe et répondre à vos questions par rapport à nos services.
+						</div>
 					</li>
 					<li class="etape_ins">
-						<div class="icone"></div><h3 class="sub-title">Installation</h3>
-						<span>Un technicien ZAP Québec se rend sur place pour configurer l’équipement nécessaire afin de partager votre connexion haute vitesse avec vos clients.</span>
+						<span class="icone"></span><h3 class="sub-title">Installation</h3>
+						<div>
+							Un technicien ZAP Québec se rend sur place pour configurer l’équipement nécessaire afin de partager votre connexion haute vitesse avec vos clients.
+						</div>
 
 					</li>
 					<li class="etape_vez">
-						<div class="icone"></div><h3 class="sub-title">Vous êtes une ZAP</h3>
-						<span>Vos clients peuvent dès lors se connecter à internet et profiter du confort de votre commerce pour naviguer pleinement.</span>
-						<span class="more"><a href="<?php get_bloginfo('url'); ?>/devenez-une-zap">En savoir plus...</a></span>
+						<span class="icone"></span><h3 class="sub-title">Vous êtes une ZAP</h3>
+						<div>
+							Vos clients peuvent dès lors se connecter à internet et profiter du confort de votre commerce pour naviguer pleinement.
+							<span class="more"><a href="<?php get_bloginfo('url'); ?>/devenez-une-zap">En savoir plus...</a></span>
+						</div>
 					</li>
 				</ul>
 			</div>
