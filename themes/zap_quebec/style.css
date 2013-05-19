@@ -6536,12 +6536,16 @@ body {
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: 100;
 }
+/* line 11, sass/style.scss */
+body a:hover {
+  color: #242424;
+}
 
-/* line 12, sass/style.scss */
+/* line 17, sass/style.scss */
 header {
   border-top: 5px solid #c3cf21;
 }
-/* line 14, sass/style.scss */
+/* line 19, sass/style.scss */
 header nav.menu-lang-container {
   width: 100%;
   margin-left: auto;
@@ -6552,7 +6556,7 @@ header nav.menu-lang-container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 16, sass/style.scss */
+/* line 21, sass/style.scss */
 header nav.menu-lang-container li {
   position: relative;
   padding-left: 0.9375em;
@@ -6564,7 +6568,7 @@ header nav.menu-lang-container li {
   margin: 0;
   padding: 0;
 }
-/* line 23, sass/style.scss */
+/* line 28, sass/style.scss */
 header nav.menu-main-container {
   width: 100%;
   margin-left: auto;
@@ -6575,7 +6579,7 @@ header nav.menu-main-container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 25, sass/style.scss */
+/* line 30, sass/style.scss */
 header nav.menu-main-container li {
   position: relative;
   padding-left: 0.9375em;
@@ -6587,11 +6591,11 @@ header nav.menu-main-container li {
   height: 3em;
   background: #689e2d;
 }
-/* line 31, sass/style.scss */
+/* line 36, sass/style.scss */
 header nav.menu-main-container li:first-child {
   background: #5bacd7;
 }
-/* line 34, sass/style.scss */
+/* line 39, sass/style.scss */
 header nav.menu-main-container li a {
   color: white;
   display: block;
@@ -6599,7 +6603,15 @@ header nav.menu-main-container li a {
   padding-top: 0.5em;
   font-size: 1.3em;
 }
-/* line 43, sass/style.scss */
+/* line 45, sass/style.scss */
+header nav.menu-main-container li a:hover {
+  color: white;
+}
+/* line 50, sass/style.scss */
+header nav.menu-main-container li:hover {
+  background: #242424;
+}
+/* line 55, sass/style.scss */
 header div.bandeau {
   width: 100%;
   margin-left: auto;
@@ -6611,7 +6623,7 @@ header div.bandeau {
   *zoom: 1;
   padding: 1em 0 2em;
 }
-/* line 46, sass/style.scss */
+/* line 58, sass/style.scss */
 header div.bandeau .logo {
   position: relative;
   padding-left: 0.9375em;
@@ -6623,12 +6635,12 @@ header div.bandeau .logo {
   float: none !important;
   float: left;
 }
-/* line 48, sass/style.scss */
+/* line 60, sass/style.scss */
 header div.bandeau .logo img {
   display: block;
 }
 
-/* line 55, sass/style.scss */
+/* line 67, sass/style.scss */
 div#main {
   width: 100%;
   margin-left: auto;
@@ -6639,16 +6651,16 @@ div#main {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 57, sass/style.scss */
+/* line 69, sass/style.scss */
 div#main h2.title {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
 }
-/* line 60, sass/style.scss */
+/* line 72, sass/style.scss */
 div#main h2.title.devenez {
   text-align: center;
 }
-/* line 64, sass/style.scss */
+/* line 76, sass/style.scss */
 div#main section.nouvelles {
   width: 100%;
   margin-left: auto;
@@ -6659,7 +6671,7 @@ div#main section.nouvelles {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 66, sass/style.scss */
+/* line 78, sass/style.scss */
 div#main section.nouvelles div.plus_recente {
   position: relative;
   padding-left: 0.9375em;
@@ -6668,20 +6680,31 @@ div#main section.nouvelles div.plus_recente {
   margin-left: 1.66667%;
   float: left;
 }
-/* line 70, sass/style.scss */
+/* line 82, sass/style.scss */
 div#main section.nouvelles h3 {
   margin: 0;
 }
-/* line 74, sass/style.scss */
+/* line 86, sass/style.scss */
 div#main section.nouvelles .postmetadata {
   font-size: 0.8em;
 }
-/* line 78, sass/style.scss */
+/* line 90, sass/style.scss */
 div#main section.nouvelles .suite {
   display: block;
   margin-bottom: 0.8em;
 }
-/* line 83, sass/style.scss */
+/* line 95, sass/style.scss */
+div#main section.nouvelles a.liste {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #C3CF21;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 0px 3px #C3CF60;
+  box-shadow: 0px 0px 0px 3px #C3CF60;
+  margin-bottom: 4px;
+}
+/* line 106, sass/style.scss */
 div#main section.nouvelles aside {
   position: relative;
   padding-left: 0.9375em;
@@ -6690,7 +6713,7 @@ div#main section.nouvelles aside {
   float: right;
   float: left;
 }
-/* line 85, sass/style.scss */
+/* line 108, sass/style.scss */
 div#main section.nouvelles aside h3 {
   background: #689e2d;
   color: white;
@@ -6698,14 +6721,15 @@ div#main section.nouvelles aside h3 {
   text-transform: uppercase;
   font-size: 1.2em;
   margin: 0 0 0.7em -10px;
+  display: inline-block;
 }
-/* line 93, sass/style.scss */
+/* line 117, sass/style.scss */
 div#main section.nouvelles aside li {
   list-style: none;
   margin: 0 0 0.6em;
   padding: 0;
 }
-/* line 101, sass/style.scss */
+/* line 125, sass/style.scss */
 div#main .howTo_zap {
   width: 100%;
   margin-left: auto;
@@ -6716,7 +6740,7 @@ div#main .howTo_zap {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 103, sass/style.scss */
+/* line 127, sass/style.scss */
 div#main .howTo_zap ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6727,7 +6751,7 @@ div#main .howTo_zap ul {
   float: none !important;
   float: left;
 }
-/* line 105, sass/style.scss */
+/* line 129, sass/style.scss */
 div#main .howTo_zap ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6739,16 +6763,12 @@ div#main .howTo_zap ul li {
   margin: 0;
   padding: 0;
 }
-/* line 112, sass/style.scss */
+/* line 136, sass/style.scss */
 div#main .howTo_zap h3 {
   font-size: 1.4em;
   color: #0080B2;
 }
-/* line 118, sass/style.scss */
-div#main footer {
-  background: #E6E9EB;
-}
-/* line 121, sass/style.scss */
+/* line 144, sass/style.scss */
 div#main footer .sponsors {
   width: 100%;
   margin-left: auto;
@@ -6760,14 +6780,14 @@ div#main footer .sponsors {
   *zoom: 1;
   margin: 2em 0;
 }
-/* line 124, sass/style.scss */
+/* line 147, sass/style.scss */
 div#main footer .sponsors h2 {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
   text-align: center;
 }
-/* line 130, sass/style.scss */
+/* line 153, sass/style.scss */
 div#main footer .sponsors ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6778,7 +6798,7 @@ div#main footer .sponsors ul {
   float: none !important;
   float: left;
 }
-/* line 132, sass/style.scss */
+/* line 155, sass/style.scss */
 div#main footer .sponsors ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6787,7 +6807,7 @@ div#main footer .sponsors ul li {
   float: left;
   list-style: none;
 }
-/* line 139, sass/style.scss */
+/* line 162, sass/style.scss */
 div#main footer .provider {
   position: relative;
   padding-left: 0.9375em;
@@ -6795,8 +6815,9 @@ div#main footer .provider {
   width: 75%;
   margin-left: 0%;
   float: right;
+  margin-bottom: 3em;
 }
-/* line 143, sass/style.scss */
+/* line 167, sass/style.scss */
 div#main footer .contactez_nous {
   width: 100%;
   margin-left: auto;
@@ -6809,4 +6830,20 @@ div#main footer .contactez_nous {
   display: block;
   padding: 3em 0;
   text-align: center;
+  color: white;
+  background: #0080B2;
+}
+/* line 174, sass/style.scss */
+div#main footer .contactez_nous a {
+  color: white;
+}
+/* line 176, sass/style.scss */
+div#main footer .contactez_nous a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* line 181, sass/style.scss */
+div#main footer .contactez_nous span {
+  font-family: 'source Sans Pro', sans-serif;
+  font-weight: 300;
 }

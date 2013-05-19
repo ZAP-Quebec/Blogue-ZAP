@@ -7,6 +7,11 @@ body {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 100;
 	}
+	a {
+		&:hover {
+			color: #242424;
+		}
+	}
 }
 
 header {
@@ -37,6 +42,13 @@ header {
 				text-align: center;
 				padding-top: 0.5em;
 				font-size: 1.3em;
+				&:hover {
+					color: white;
+				}
+			}
+
+			&:hover {
+				background: #242424;
 			}
 		}
 	}
@@ -80,6 +92,17 @@ div#main {
 			margin-bottom: 0.8em;
 		}
 
+		a.liste {
+			display: inline-block;
+			padding: 3px 8px;
+			background: #C3CF21;
+			color: white;
+			text-transform: uppercase;
+			-webkit-box-shadow:  0px 0px 0px 3px #C3CF60;
+        	box-shadow:  0px 0px 0px 3px #C3CF60;
+        	margin-bottom: 4px;
+		}
+
 		aside {
 			@include grid-column(4, true, false);
 			h3 {
@@ -89,6 +112,7 @@ div#main {
 				text-transform: uppercase;
 				font-size: 1.2em;
 				margin: 0 0 0.7em -10px;
+				display: inline-block;
 			}
 			li {
 				list-style: none;
@@ -116,7 +140,6 @@ div#main {
 	}
 
 	footer {
-		background: #E6E9EB;
 
 		.sponsors {
 			@include grid-row();
@@ -138,6 +161,7 @@ div#main {
 
 		.provider {
 			@include grid-column(9,false,false,0, false, false, false, right);
+			margin-bottom: 3em;
 		}
 
 		.contactez_nous {
@@ -145,6 +169,19 @@ div#main {
 			display: block;
 			padding: 3em 0;
 			text-align: center;
+			color: white;
+			background: #0080B2;
+			a {
+				color: white;
+				&:hover {
+					color: white;
+					text-decoration: underline;
+				}
+			}
+			span {
+				font-family: 'source Sans Pro', sans-serif;
+				font-weight: 300;
+			} 
 		}
 
 	}
