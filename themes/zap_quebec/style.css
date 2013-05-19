@@ -6792,31 +6792,36 @@ div#main .howTo_zap ul li.etape_vez {
 }
 /* line 152, sass/style.scss */
 div#main .howTo_zap ul li.etape_vez h3 {
-  background: #C3CF21;
+  background: #689e2d;
   color: white;
 }
-/* line 159, sass/style.scss */
+/* line 156, sass/style.scss */
+div#main .howTo_zap ul li.etape_vez div {
+  -webkit-box-shadow: 0px 0px 1px 3px rgba(104, 158, 45, 0.7);
+  box-shadow: 0px 0px 1px 3px rgba(104, 158, 45, 0.7);
+}
+/* line 163, sass/style.scss */
 div#main .howTo_zap h3 {
   color: white;
   font-size: 0.9em;
   background: #0080B2;
   display: inline-block;
-  padding: 3px 4px 1px;
+  padding: 3px 6px 1px;
   margin: 0 0 0 -10px;
   text-transform: uppercase;
 }
-/* line 168, sass/style.scss */
+/* line 172, sass/style.scss */
 div#main .howTo_zap div {
   display: block;
   font-size: 0.9em;
   padding: 8px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(243, 243, 243, 0.7);
 }
-/* line 176, sass/style.scss */
+/* line 180, sass/style.scss */
 div#main footer {
   position: relative;
 }
-/* line 178, sass/style.scss */
+/* line 182, sass/style.scss */
 div#main footer .sponsors {
   width: 100%;
   margin-left: auto;
@@ -6828,14 +6833,14 @@ div#main footer .sponsors {
   *zoom: 1;
   margin: 4em 0 2em;
 }
-/* line 181, sass/style.scss */
+/* line 185, sass/style.scss */
 div#main footer .sponsors h2 {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
   text-align: center;
 }
-/* line 187, sass/style.scss */
+/* line 191, sass/style.scss */
 div#main footer .sponsors ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6846,7 +6851,7 @@ div#main footer .sponsors ul {
   float: none !important;
   float: left;
 }
-/* line 189, sass/style.scss */
+/* line 193, sass/style.scss */
 div#main footer .sponsors ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6855,7 +6860,7 @@ div#main footer .sponsors ul li {
   float: left;
   list-style: none;
 }
-/* line 196, sass/style.scss */
+/* line 200, sass/style.scss */
 div#main footer .provider {
   position: relative;
   padding-left: 0.9375em;
@@ -6865,7 +6870,7 @@ div#main footer .provider {
   float: right;
   margin-bottom: 3em;
 }
-/* line 201, sass/style.scss */
+/* line 205, sass/style.scss */
 div#main footer .quebec {
   background: url("images/quebec.png") no-repeat left bottom;
   background-size: auto 100%;
@@ -6875,7 +6880,7 @@ div#main footer .quebec {
   left: 0;
   width: 100%;
 }
-/* line 211, sass/style.scss */
+/* line 215, sass/style.scss */
 div#main footer .contactez_nous {
   width: 100%;
   margin-left: auto;
@@ -6891,16 +6896,16 @@ div#main footer .contactez_nous {
   color: white;
   background: #0080B2;
 }
-/* line 218, sass/style.scss */
+/* line 222, sass/style.scss */
 div#main footer .contactez_nous a {
   color: white;
 }
-/* line 220, sass/style.scss */
+/* line 224, sass/style.scss */
 div#main footer .contactez_nous a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 225, sass/style.scss */
+/* line 229, sass/style.scss */
 div#main footer .contactez_nous span {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 300;

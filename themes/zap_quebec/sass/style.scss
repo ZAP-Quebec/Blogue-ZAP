@@ -150,8 +150,12 @@ div#main {
 					margin-top: -10px;
 					zoom: 1.1;
 					h3 {
-						background: #C3CF21;
+						background: rgba(104, 158, 45, 1.0);
 						color: white;
+					}
+					div {
+						-webkit-box-shadow:  0px 0px 1px 3px rgba(104, 158, 45, 0.7);
+        				box-shadow:  0px 0px 1px 3px rgba(104, 158, 45, 0.7);
 					}
 				}
 			}
@@ -161,7 +165,7 @@ div#main {
 			font-size: 0.9em;
 			background: #0080B2;
 			display: inline-block;
-			padding: 3px 4px 1px;
+			padding: 3px 6px 1px;
 			margin: 0 0 0 -10px;
 			text-transform: uppercase;
 		}
@@ -169,7 +173,7 @@ div#main {
 			display: block;
 			font-size: 0.9em;
 			padding: 8px;
-			background: rgba(255,255,255,0.5);
+			background: rgba(243, 243, 243, 0.7);
 		}
 	}
 
