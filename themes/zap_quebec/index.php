@@ -1,17 +1,14 @@
 <?php get_header(); ?>
 
-		<h3><a href="<?php bloginfo('rss2_url'); ?>" id="derniere_nouv"></a></h3>
+		<h3></h3>
                 
-		<div class="graybox">
-			<div id="haut"></div>
-			<div id="bas"></div>
-
-			<div id="text_content">
+		<section class="nouvelles">
+			<div class="liste">
 				<?php if (have_posts()) : ?>
 
 					<?php while (have_posts()) : the_post(); ?>
 
-						<div class="post" id="post-<?php the_ID(); ?>">
+						<article class="post" id="post-<?php the_ID(); ?>">
 							<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                                                       
 
@@ -20,7 +17,7 @@
 							</div>
 
 							<?php zapqc_get_description_line();?>
-						</div>
+						</acticle>
 
 					<?php endwhile; ?>
 				<?php else : ?>
@@ -30,13 +27,11 @@
 		
 
 				<?php endif; ?>
-			
 			</div>
-
-			<?php get_sidebar(); ?>
-
-			<div class="clearer"></div>
-		</div>
+			<aside>
+				<?php get_sidebar(); ?>
+			</aside>
+		</section>
 
 
 	<?php zapqc_get_prev_suiv(); ?>

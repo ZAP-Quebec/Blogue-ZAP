@@ -6672,7 +6672,7 @@ div#main section.nouvelles {
   *zoom: 1;
 }
 /* line 78, sass/style.scss */
-div#main section.nouvelles div.plus_recente {
+div#main section.nouvelles div.liste {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;

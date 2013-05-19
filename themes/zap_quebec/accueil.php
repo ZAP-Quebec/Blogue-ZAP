@@ -22,7 +22,7 @@ Template Name: Accueil
 			while ($query->have_posts()) : $query->the_post();
 				if( $i<= 2){?>
 					<? if($i ==0){ ?>
-					<div class="plus_recente">
+					<div class="liste">
 					<? } ?>
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php zapqc_get_description_line() ?>
@@ -32,7 +32,7 @@ Template Name: Accueil
 							<a href="<?php comments_link('Commenter l’article', '1 commentaire', '% commentaires'); ?>" class="comment">Commenter l'article</a>
 						</div>
 					<? if($i ==2){ ?>
-						<a href="<?php get_bloginfo('home'); ?>nouvelles">Toutes les nouvelles</a>
+						<a href="<?php get_bloginfo('home'); ?>nouvelles" class="liste">Toutes les nouvelles</a>
 					</div>
 					<aside class="sidebar">
 						<h3>Également</h3>
