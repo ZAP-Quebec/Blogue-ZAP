@@ -17,7 +17,6 @@
 			<div class="contactez_nous">
 				<span>Service et soutien technique&nbsp;&nbsp;—&nbsp;&nbsp;</span> <a href="mailto:info@zapquebec.org">info@zapquebec.org</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;418.263.8020&nbsp;&nbsp;&bull;&nbsp;&nbsp;<span>Réponse en 24h</span>
 				<div class="coordonnes">
-					<span class="title">NOS COORDONNÉES</span>
 					<span> ZAP Québec<span>
 					<span>CP 20005, CSP Belvédère</span>
 					<span>Québec, QC G1S 4Z2</span>
