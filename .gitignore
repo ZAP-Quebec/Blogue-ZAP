@@ -1,0 +1,10 @@
+.sass-cache
+.vagrant
+*~
+.DS_Store
+Thumbs.db
+# Wordpress Specific
+wordpress-importer
+wp-livephp
+# You should not use git to transfert content
+uploads
