@@ -7,8 +7,6 @@ Template Name: Accueil
 <?php get_header(); 
 
 ?>
-
-			<h2 class="title" id="aider">Nous aidons les endroits <em>publics</em>, les <em>commerces</em> et les <em>entreprises</em> de Québec à offrir du <strong>Web sans-fil</strong> aux citoyens </h2>
 			
 			<h3 id="derniere_nouv"><a href="<?php bloginfo('rss2_url'); ?>" ></a></h3>
 

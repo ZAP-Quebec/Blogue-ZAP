@@ -27,15 +27,17 @@
 		<script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/custom.modernizr.js"></script>
 	</head>
 	<body >
-		<header>
-			<?php wp_nav_menu( array( 'theme_location' => 'lang', 'menu_class' => 'nav-lang', 'container' =>'nav' ) ); ?>
+		<div id="main"> 
+			<header>
+				<?php wp_nav_menu( array( 'theme_location' => 'lang', 'menu_class' => 'nav-lang', 'container' =>'nav' ) ); ?>
 
-			<div class="bandeau">
-				<div class="logo"><a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/logo_zapmini.png" /></a></div>
-			</div>
-		
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container' =>'nav' ) ); ?>
+				<div class="bandeau">
+					<div class="logo"><a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/logo_zap_grand.png" /></a></div>
+				</div>
+
+				<h2 class="title" id="aider">Nous aidons les endroits <em>publics</em>, les <em>commerces</em> et les <em>entreprises</em> de Québec à offrir du <strong>Web sans-fil</strong> aux citoyens </h2>
 			
-			<?php if(!is_front_page()){ zapqc_get_compact_duz();} ?>
-        </header>  
-        <div id="main">            
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container' =>'nav' ) ); ?>
+				
+				<?php if(!is_front_page()){ zapqc_get_compact_duz();} ?>
+	        </header>             
