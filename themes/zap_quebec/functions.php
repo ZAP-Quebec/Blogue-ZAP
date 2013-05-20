@@ -18,6 +18,18 @@ if ( function_exists('register_sidebar') )
         'after_title' => '</h2>',
     ));
 
+	register_sidebar( array(
+	    'id'          => 'side-news',
+	    'name'        => __( 'Side News', $text_domain ),
+	    'description' => __( 'This sidebar is located at the side of a single news.', $text_domain ),
+	) );
+
+	register_sidebar( array(
+    	'id'          => 'side-page',
+    	'name'        => __( 'Side Page', $text_domain ),
+    	'description' => __( 'This sidebar is located at the side of a single page.', $text_domain ),
+	) );
+
 function zapqc_get_prev_suiv(){
 ?>
 		<div class="navigation">

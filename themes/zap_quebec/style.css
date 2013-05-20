@@ -6670,7 +6670,7 @@ div#main h2.title.devenez {
   margin-bottom: 0;
 }
 /* line 85, sass/style.scss */
-div#main section.nouvelles {
+div#main section.nouvelles, div#main section.nouvelle, div#main section.page {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -6681,7 +6681,7 @@ div#main section.nouvelles {
   *zoom: 1;
 }
 /* line 87, sass/style.scss */
-div#main section.nouvelles div.liste {
+div#main section.nouvelles div.liste, div#main section.nouvelle div.liste, div#main section.page div.liste {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
@@ -6690,20 +6690,21 @@ div#main section.nouvelles div.liste {
   float: left;
 }
 /* line 91, sass/style.scss */
-div#main section.nouvelles h3 {
+div#main section.nouvelles h3, div#main section.nouvelle h3, div#main section.page h3 {
   margin: 0;
+  color: #689E2D;
 }
-/* line 95, sass/style.scss */
-div#main section.nouvelles .postmetadata {
+/* line 96, sass/style.scss */
+div#main section.nouvelles .postmetadata, div#main section.nouvelle .postmetadata, div#main section.page .postmetadata {
   font-size: 0.8em;
 }
-/* line 99, sass/style.scss */
-div#main section.nouvelles .suite {
+/* line 100, sass/style.scss */
+div#main section.nouvelles .suite, div#main section.nouvelle .suite, div#main section.page .suite {
   display: block;
   margin-bottom: 0.8em;
 }
-/* line 104, sass/style.scss */
-div#main section.nouvelles a.liste {
+/* line 105, sass/style.scss */
+div#main section.nouvelles a.liste, div#main section.nouvelle a.liste, div#main section.page a.liste {
   display: inline-block;
   padding: 3px 8px;
   background: #C3CF21;
@@ -6713,8 +6714,8 @@ div#main section.nouvelles a.liste {
   box-shadow: 0px 0px 0px 3px #C3CF60;
   margin-bottom: 4px;
 }
-/* line 115, sass/style.scss */
-div#main section.nouvelles aside {
+/* line 116, sass/style.scss */
+div#main section.nouvelles aside, div#main section.nouvelle aside, div#main section.page aside {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
@@ -6722,8 +6723,8 @@ div#main section.nouvelles aside {
   float: right;
   float: left;
 }
-/* line 117, sass/style.scss */
-div#main section.nouvelles aside h3, div#main section.nouvelles aside h2 {
+/* line 118, sass/style.scss */
+div#main section.nouvelles aside h3, div#main section.nouvelles aside h2, div#main section.nouvelle aside h3, div#main section.nouvelle aside h2, div#main section.page aside h3, div#main section.page aside h2 {
   background: #689e2d;
   color: white;
   padding: 0 10px;
@@ -6732,18 +6733,18 @@ div#main section.nouvelles aside h3, div#main section.nouvelles aside h2 {
   margin: 0 0 0.7em -10px;
   display: inline-block;
 }
-/* line 126, sass/style.scss */
-div#main section.nouvelles aside li {
+/* line 127, sass/style.scss */
+div#main section.nouvelles aside li, div#main section.nouvelle aside li, div#main section.page aside li {
   list-style: none;
   margin: 0 0 0.6em;
   padding: 0;
   /* Add space between the end of a list and the next title */
 }
-/* line 131, sass/style.scss */
-div#main section.nouvelles aside li > ul {
+/* line 132, sass/style.scss */
+div#main section.nouvelles aside li > ul, div#main section.nouvelle aside li > ul, div#main section.page aside li > ul {
   margin: 0 0 2em 0;
 }
-/* line 138, sass/style.scss */
+/* line 139, sass/style.scss */
 div#main .howTo_zap {
   width: 100%;
   margin-left: auto;
@@ -6756,7 +6757,7 @@ div#main .howTo_zap {
   padding: 1em 0;
   border-bottom: 4px solid #689e2d;
 }
-/* line 142, sass/style.scss */
+/* line 143, sass/style.scss */
 div#main .howTo_zap ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6767,7 +6768,7 @@ div#main .howTo_zap ul {
   float: none !important;
   float: left;
 }
-/* line 144, sass/style.scss */
+/* line 145, sass/style.scss */
 div#main .howTo_zap ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6778,7 +6779,7 @@ div#main .howTo_zap ul li {
   list-style: none;
   margin: 0;
 }
-/* line 148, sass/style.scss */
+/* line 149, sass/style.scss */
 div#main .howTo_zap ul li.etape_vez {
   position: relative;
   padding-left: 0.9375em;
@@ -6790,17 +6791,17 @@ div#main .howTo_zap ul li.etape_vez {
   margin-top: -10px;
   zoom: 1.1;
 }
-/* line 152, sass/style.scss */
+/* line 153, sass/style.scss */
 div#main .howTo_zap ul li.etape_vez h3 {
   background: #689e2d;
   color: white;
 }
-/* line 156, sass/style.scss */
+/* line 157, sass/style.scss */
 div#main .howTo_zap ul li.etape_vez div {
   -webkit-box-shadow: 0px 0px 1px 3px rgba(104, 158, 45, 0.7);
   box-shadow: 0px 0px 1px 3px rgba(104, 158, 45, 0.7);
 }
-/* line 163, sass/style.scss */
+/* line 164, sass/style.scss */
 div#main .howTo_zap h3 {
   color: white;
   font-size: 0.9em;
@@ -6810,18 +6811,18 @@ div#main .howTo_zap h3 {
   margin: 0 0 0 -10px;
   text-transform: uppercase;
 }
-/* line 172, sass/style.scss */
+/* line 173, sass/style.scss */
 div#main .howTo_zap div {
   display: block;
   font-size: 0.9em;
   padding: 8px;
   background: rgba(243, 243, 243, 0.7);
 }
-/* line 180, sass/style.scss */
+/* line 181, sass/style.scss */
 div#main footer {
   position: relative;
 }
-/* line 182, sass/style.scss */
+/* line 183, sass/style.scss */
 div#main footer .sponsors {
   width: 100%;
   margin-left: auto;
@@ -6839,14 +6840,14 @@ div#main footer .sponsors {
   border-left: none;
   border-right: none;
 }
-/* line 191, sass/style.scss */
+/* line 192, sass/style.scss */
 div#main footer .sponsors h2 {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
   text-align: center;
 }
-/* line 197, sass/style.scss */
+/* line 198, sass/style.scss */
 div#main footer .sponsors ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6857,7 +6858,7 @@ div#main footer .sponsors ul {
   float: none !important;
   float: left;
 }
-/* line 199, sass/style.scss */
+/* line 200, sass/style.scss */
 div#main footer .sponsors ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6866,7 +6867,7 @@ div#main footer .sponsors ul li {
   float: left;
   list-style: none;
 }
-/* line 206, sass/style.scss */
+/* line 207, sass/style.scss */
 div#main footer .provider {
   position: relative;
   padding-left: 0.9375em;
@@ -6876,7 +6877,7 @@ div#main footer .provider {
   float: right;
   margin-bottom: 3em;
 }
-/* line 211, sass/style.scss */
+/* line 212, sass/style.scss */
 div#main footer .quebec {
   background: url("images/quebec.png") no-repeat left bottom;
   background-size: auto 100%;
@@ -6887,7 +6888,7 @@ div#main footer .quebec {
   width: 100%;
   z-index: 0;
 }
-/* line 222, sass/style.scss */
+/* line 223, sass/style.scss */
 div#main footer .contactez_nous {
   width: 100%;
   margin-left: auto;
@@ -6903,16 +6904,16 @@ div#main footer .contactez_nous {
   color: white;
   background: #0080B2;
 }
-/* line 229, sass/style.scss */
+/* line 230, sass/style.scss */
 div#main footer .contactez_nous a {
   color: white;
 }
-/* line 231, sass/style.scss */
+/* line 232, sass/style.scss */
 div#main footer .contactez_nous a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 236, sass/style.scss */
+/* line 237, sass/style.scss */
 div#main footer .contactez_nous span {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 300;
