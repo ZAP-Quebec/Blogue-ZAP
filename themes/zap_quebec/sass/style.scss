@@ -181,7 +181,13 @@ div#main {
 		position: relative;
 		.sponsors {
 			@include grid-row();
+			position: relative;
 			margin: 4em 0 2em;
+			padding-bottom: 20px;
+			background: rgba(255,255,255,0.6);
+			border: 2px solid #5bacd7;
+			border-left: none;
+			border-right: none;
 			h2 {
 				font-family: 'source Sans Pro', sans-serif;
 				font-weight: 200;
@@ -210,6 +216,7 @@ div#main {
 			bottom: 7em;
 			left: 0;
 			width: 100%;
+			z-index: 0;
 		}
 
 		.contactez_nous {

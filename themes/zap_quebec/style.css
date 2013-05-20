@@ -6831,16 +6831,22 @@ div#main footer .sponsors {
   max-width: 62.5em;
   overflow: hidden;
   *zoom: 1;
+  position: relative;
   margin: 4em 0 2em;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #5bacd7;
+  border-left: none;
+  border-right: none;
 }
-/* line 185, sass/style.scss */
+/* line 191, sass/style.scss */
 div#main footer .sponsors h2 {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
   text-align: center;
 }
-/* line 191, sass/style.scss */
+/* line 197, sass/style.scss */
 div#main footer .sponsors ul {
   position: relative;
   padding-left: 0.9375em;
@@ -6851,7 +6857,7 @@ div#main footer .sponsors ul {
   float: none !important;
   float: left;
 }
-/* line 193, sass/style.scss */
+/* line 199, sass/style.scss */
 div#main footer .sponsors ul li {
   position: relative;
   padding-left: 0.9375em;
@@ -6860,7 +6866,7 @@ div#main footer .sponsors ul li {
   float: left;
   list-style: none;
 }
-/* line 200, sass/style.scss */
+/* line 206, sass/style.scss */
 div#main footer .provider {
   position: relative;
   padding-left: 0.9375em;
@@ -6870,7 +6876,7 @@ div#main footer .provider {
   float: right;
   margin-bottom: 3em;
 }
-/* line 205, sass/style.scss */
+/* line 211, sass/style.scss */
 div#main footer .quebec {
   background: url("images/quebec.png") no-repeat left bottom;
   background-size: auto 100%;
@@ -6879,8 +6885,9 @@ div#main footer .quebec {
   bottom: 7em;
   left: 0;
   width: 100%;
+  z-index: 0;
 }
-/* line 215, sass/style.scss */
+/* line 222, sass/style.scss */
 div#main footer .contactez_nous {
   width: 100%;
   margin-left: auto;
@@ -6896,16 +6903,16 @@ div#main footer .contactez_nous {
   color: white;
   background: #0080B2;
 }
-/* line 222, sass/style.scss */
+/* line 229, sass/style.scss */
 div#main footer .contactez_nous a {
   color: white;
 }
-/* line 224, sass/style.scss */
+/* line 231, sass/style.scss */
 div#main footer .contactez_nous a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 229, sass/style.scss */
+/* line 236, sass/style.scss */
 div#main footer .contactez_nous span {
   font-family: 'source Sans Pro', sans-serif;
   font-weight: 300;
